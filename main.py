@@ -1,7 +1,3 @@
-import sys
-import threading
-import time
-
 import cv2
 from ultralytics import YOLO
 import supervision as sv
@@ -48,7 +44,6 @@ class BoatTracking:
         # self.line1 = ([49, 461], [371, 258])
         # self.line2 = ([443, 258], [675, 462])
         # информация о размере изображения
-        self.video_info = sv.VideoInfo.from_video_path(self.capture_index)
 
         self.box = sv.BoxAnnotator(
             color=sv.Color(r=128, g=0, b=0),
@@ -173,5 +168,5 @@ class BoatTracking:
         self.root.mainloop()
 
 
-tracking = BoatTracking(capture_index="videos/TEST3.mp4")
+tracking = BoatTracking(capture_index=0)
 tracking()
