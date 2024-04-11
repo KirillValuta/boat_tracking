@@ -20,5 +20,5 @@ def window_create():
 #     window.after(1000, update_text)  # вызов функции через 1000 миллисекунд
 #
 # # вызов функции для первоначального добавления текста
-# update_text()
+# update_text() ок
 
